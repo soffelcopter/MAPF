@@ -1,6 +1,7 @@
 # MAPF with prunning
 
 This repository contains an ASP solver for MAPF which is based on the idea of tree prunning as described in [1]. 
+
 To run the solver:
 
 ```
