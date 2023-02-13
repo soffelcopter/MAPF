@@ -1,4 +1,4 @@
-#const k = 50.
+#const k = 12.
 
 timestep(1..horizon).
 
@@ -38,8 +38,8 @@ conflict(A1, A2, T) :- edge_conflict(A1, A2, _, _, T).
 % Drop models with conflicts
 :- conflict(_, _, _).
 
-% Drop models where agents are too far away from their goals to reach it in the remaining time steps
-:- path(A, _, (X, Y), T), goal(A, (X1, Y1)), |X - X1| + |Y - Y1| > (horizon - T).
+% Drop models where agents are too far away from their goals to reach it in given horizon
+:- path(A, _, (X, Y), T), goal(A, (X1, Y1)), |X - X1| + |Y - Y1| > horizon.
  
 
 % Optimize on makespan
