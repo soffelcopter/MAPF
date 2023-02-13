@@ -19,6 +19,8 @@ The solver was tested on the instances in the `Instances` folder. Not all instan
 
 The main reason for failing is the size and the density of the instances. Even after pruning, the search space remains too big to be solved in reasonable time.
 
+#### References
+
 [1] M. Husár, J. Švancara, P. Obermeier, R. Barták, and T. Schaub, “Reduction-based Solving of Multi-agent Pathfinding on Large Maps Using Graph Pruning,” in Proc. of the 21st International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2022), 2022, p. 9.
 
 
