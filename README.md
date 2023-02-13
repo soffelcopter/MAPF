@@ -12,6 +12,8 @@ This solver applies two pruning strategies:
 1. For each agent, remove from the underlying graph the nodes that lay further than k steps away from the shortest path.
 2. Discard a model if at any time step there is an agent that will not be able to reach its goal within the horizon.
 
+The constant k is defined in the first line of the code and can be modified for different instances.
+
 The solver was tested on the instances in the `Instances` folder. Not all instances are solvable by this solver.
 | Solved | Not solved |
 | ------------- | ------------- |
